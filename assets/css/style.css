@@ -1,1 +1,104 @@
-/* Content for assets/css/style.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Example Styles - Customize these */
+
+body {
+    @apply font-sans bg-gray-100 text-gray-800;
+}
+
+.container {
+    @apply max-w-4xl mx-auto px-4 py-8;
+}
+
+.navbar {
+    @apply bg-white shadow-md py-4;
+}
+
+.navbar-brand {
+    @apply text-2xl font-bold text-indigo-600;
+}
+
+.nav-link {
+    @apply text-gray-600 hover:text-indigo-600 px-3 py-2 rounded-md;
+}
+
+.btn {
+    @apply bg-indigo-500 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded;
+}
+
+.form-control {
+    @apply shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline;
+}
+
+.card {
+    @apply bg-white shadow-md rounded-md p-4 mb-4;
+}
+
+.card-title {
+    @apply text-xl font-bold mb-2;
+}
+
+.card-text {
+    @apply text-gray-700;
+}
+
+.post-image {
+    @apply rounded-md mb-2;
+}
+
+.profile-picture {
+    @apply rounded-full w-32 h-32 object-cover;
+}
+
+.comment {
+    @apply bg-gray-50 p-2 rounded-md mb-2;
+}
+
+.comment-author {
+    @apply font-bold;
+}
+
+.error {
+    @apply text-red-500 text-sm italic;
+}
+
+.success {
+    @apply text-green-500 text-sm italic;
+}
+
+/* Additional Custom Styles */
+
+/* Example for a color palette display */
+.color-palette {
+    @apply flex space-x-2;
+}
+
+.color-box {
+    @apply w-10 h-10 rounded shadow-md;
+}
+
+/* Style for post titles */
+.post-title {
+    @apply text-2xl font-semibold text-gray-900 hover:text-indigo-700 transition duration-200;
+}
+
+/* Style for user profiles */
+.profile-bio {
+    @apply text-gray-700 leading-relaxed;
+}
+
+/* Style for friend requests */
+.friend-request-item {
+    @apply flex items-center justify-between py-2 border-b border-gray-200;
+}
+
+.friend-request-buttons {
+    @apply space-x-2;
+}
+
+/* Style for search results */
+.search-result-item {
+    @apply flex items-center py-2 border-b border-gray-200;
+}
